@@ -10,12 +10,13 @@ def MakeVideo(VidName,fps):
         mp4 = VideoFileClip(VidName)
         mp4.write_gif("mygif.gif",fps)
         showinfo(title="Succes", message="Video was succesfully converted to 'mygif.gif'")
+        
     except OSError:
         print("video does not exist")
         showerror(title = "Error", message = "video does not exist or was not placed in the folder")
 
     except ZeroDivisionError:
-        print("fps to low!")
+        print("fps to low")
         showerror(title = "Error", message = "fps to low")
 
 
