@@ -37,31 +37,31 @@ window.title("Convert MP4 to Gif")
 window.geometry("300x200")
 
 #label
-l1 = Label(window, text="CONVERT MP4 TO GIF")
-l1.grid(row=0,column=0)
+l1 = Label(window, text = "CONVERT MP4 TO GIF")
+l1.grid(row = 0,column = 0)
 
 l2 = Label(window, text="Video title: ")
-l2.grid(row=2,column=0)
+l2.grid(row = 2,column = 0)
 
 l3 = Label(window, text="Amount of fps: ")
-l3.grid(row=3,column=0)
+l3.grid(row = 3,column = 0)
 
 
 
 #inputs
-VidName=StringVar()
-e1=Entry(window,textvariable=VidName)
-e1.grid(row=2,column=1)
+VidName = StringVar()
+e1 = Entry(window,textvariable = VidName)
+e1.grid(row = 2,column = 1)
 
 
-fps=IntVar()
-e2=Entry(window,textvariable=fps)
-e2.grid(row=3,column=1)
+fps = IntVar()
+e2 = Entry(window,textvariable = fps)
+e2.grid(row = 3,column = 1)
 
 #button
-b1=ttk.Button(window,text="Make Gif")
-b1.config(command=getvalueAndMake)
-b1.grid(row=5,column=0)
+b1 = ttk.Button(window,text = "Make Gif")
+b1.config(command = getvalueAndMake)
+b1.grid(row = 5,column = 0)
 
 window.mainloop()
 
